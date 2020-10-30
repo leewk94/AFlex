@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C094530-3E76-4524-96FE-2BE2B5E82A4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AFLEX</RootNamespace>
+    <AssemblyName>AFLEX</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCE.AutoCount">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.ARAP">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.ARAP.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.BusinessFlow">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.BusinessFlow.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.CommonAccounting">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.CommonAccounting.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.DataUpgrade">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.DataUpgrade.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.GeneralMaint">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.GeneralMaint.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.GL">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.GL.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.GL.FinancialReport">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.GL.FinancialReport.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.GST">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.GST.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.ImportExport">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.ImportExport.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.Inquiry">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.Inquiry.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.Invoicing">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.Invoicing.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.Invoicing.Purchase">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.Invoicing.Purchase.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.Invoicing.Sales">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.Invoicing.Sales.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.MainEntry">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.MainEntry.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.MainEntry.XmlSerializers">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.MainEntry.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.ManageAccountBook">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.ManageAccountBook.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.Manufacturing">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.Manufacturing.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.PASync">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.PASync.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.Stock">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.Stock.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.StockMaint">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.StockMaint.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.Tools">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.Tools.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.AutoCount.Tools.XmlSerializers">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.AutoCount.Tools.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="BCE.Utils">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.Utils.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.Utils.UI">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.Utils.UI.DLL</HintPath>
+    </Reference>
+    <Reference Include="BCE.Utils.XmlSerializers">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\BCE.Utils.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\AutoCount\Accounting 1.9\Newtonsoft.Json.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\Database\DBParams.cs" />
+    <Compile Include="Constants\Database\DBTables.cs" />
+    <Compile Include="Constants\Database\DBScripts.cs" />
+    <Compile Include="Constants\DebtorConstant.cs" />
+    <Compile Include="Constants\MasterConstant.cs" />
+    <Compile Include="Constants\TriggerMaintenanceConstant.cs" />
+    <Compile Include="Constants\Database\DBVariables.cs" />
+    <Compile Include="Domain\MasterDomain.cs" />
+    <Compile Include="Domain\TriggerMaintenanceDomain.cs" />
+    <Compile Include="Enumerations\MasterEnum.cs" />
+    <Compile Include="Enumerations\StatusCodeEnum.cs" />
+    <Compile Include="Model\CryptoResponseModel.cs" />
+    <Compile Include="Model\DBResponseModel.cs" />
+    <Compile Include="Model\DebtorModel.cs" />
+    <Compile Include="Model\MasterModel.cs" />
+    <Compile Include="Repo\DebtorRepo.cs" />
+    <Compile Include="Repo\MasterRepo.cs" />
+    <Compile Include="Repo\TriggerMaintenanceRepo.cs" />
+    <Compile Include="Services\ExternalService.cs" />
+    <Compile Include="Services\InternalService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\CryptoHelper.cs" />
+    <Compile Include="Shared\DBHelper.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
